@@ -1,0 +1,7 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Anthony's blog"
+theme = "ananke"
+
+[markup.goldmark.renderer]
+unsafe= true
