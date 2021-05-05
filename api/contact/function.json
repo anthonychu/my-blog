@@ -1,0 +1,29 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    },
+    {
+      "type": "sendGrid",
+      "direction": "out",
+      "name": "message",
+      "apiKey": "SENDGRID_API_KEY",
+      "to": "antchu@microsoft.com",
+      "from": "anthony@anthonychu.ca",
+      "subject": "Contact form"
+    }
+  ]
+}
