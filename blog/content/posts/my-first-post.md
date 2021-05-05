@@ -8,4 +8,4 @@ draft: false
 
 Welcome to my blog!
 
-{{< form-contact action="/api/contact" >}}
+{{< form-contact action="" >}}
